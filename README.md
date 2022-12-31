@@ -8,7 +8,7 @@ Able to check if the entered value has only numbers, and when in the function to
 
 Developed in Python and with the interface developed using the PySimpleGUI Framework
 
-#
+-----
 
 Olá a todos!
 
