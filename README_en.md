@@ -1,6 +1,6 @@
 # Binary Converter
 
-[Português](./README_pt.md)
+[Português](./README.md)
 
 -----
 
