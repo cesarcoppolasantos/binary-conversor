@@ -1,25 +1,25 @@
 # Function to convert binary to decimal
-def toDecimal(binaryNum=str):
+def to_decimal(binary_num: str):
 
-    try:
-        qtdNum = len(binaryNum)-1
-        decimal = 0
+    num_qty = len(binary_num)-1
+    decimal_num = 0
 
-        for i in range(0, len(binaryNum)):
+    for i in range(0, len(binary_num)):
 
-            decimal += int(binaryNum[i])*(2**qtdNum)
-            qtdNum -= 1
+        decimal_num += int(binary_num[i])*(2**num_qty)
+        num_qty -= 1
 
-        return str(decimal)
-        
-    except:
-        pass
+    return str(decimal_num)
 
 # Function to convert decimal to binary
-def toBinary(decimalNum=str):
+def to_binary(decimal_num: str):
 
-    try:
-        return str(bin(int(decimalNum))[2::])
+    decimal_num = int(decimal_num)
+    binary_num = ''
 
-    except:
-        pass
+    while decimal_num > 0:
+        quotient = decimal_num // 2
+        binary_num = str(decimal_num % 2) + binary_num
+        decimal_num = quotient
+    
+    return binary_num
